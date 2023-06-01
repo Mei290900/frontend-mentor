@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Hanken Grotesk";
+      }
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      /* background-color: aquamarine; */
+    }
+    .container{
+      width: 650px;
+      height: auto;
+      display: flex;
+      text-align: center;      
+      background-color: white;
+      border-radius: 30px;  
+      box-shadow: 10px 10px 25px #000;    
+      overflow: hidden;
+    }
+    .container .left-side{
+      width: 50%;      
+      background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 35px 47px 40px;
+    }
+    .container .left-side .result-title{
+      color: hsl(241, 100%, 89%);
+      font-size: 20px;
+    }
+     .container .left-side .circle{
+      border-radius: 50%;
+      width: 170px;
+      height: 170px;
+      background-image: linear-gradient(
+          hsla(256, 72%, 46%, 1),
+          hsla(241, 72%, 46%, 0)
+        );
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      flex-direction: column;
+      justify-content: center;
+    } 
+    .container .left-side .circle .number {
+      font-size: 60px;
+      font-weight: 800;
+      color: white;
+    }
+    .container .left-side .circle p:last-child{
+       font-weight: 300; 
+       color: hsl(241, 100%, 89%);
+    } 
+    .container .left-side  .great {
+      font-weight: 300;
+      color: white;
+      font-size:30px ;
+      padding-top: 30px;
+    }
+    .container .left-side .description{
+      color: white;
+      padding: 10px;
+    }
+
+    .container .right-side h2{
+      /* font-size: 10px; */
+      padding-top: 25px;
+      padding-left: 20px; 
+      text-align: left;
+
+    }
+
+     .right-side ul li.reaction {      
+      width: 250px;
+      height: 40px;      
+      border-radius: 10px;
+      padding-left: 20px;
+      list-style: none;
+      /* justify-items: center; */
+    }
+    .reaction{
+      background-color: rgba(220, 24, 44,0.2);
+      padding-left: 30px;
+      /* text-align: left; */
+      /* justify-content: center; */
+    }
+    .right-side ul li .reaction u.list-item-title{
+      display: flex;
+      padding-top: 20px;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-side">
+      <h5 class="result-title">Your Result</h5>        
+        <div class="circle">
+          <p class="number">76</p>    
+          <p>of 100</p>    
+        </div>
+        <div class="great">Great</div>
+        <p class="description">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    
+    <div class="right-side">
+      <h2>Summary</h2>
+      <ul>
+        <li class="reaction">
+          <div class="list-item-title">
+            <img src="assets/images/icon-reaction.svg" alt="reaction">
+            Reaction
+          </div>
+        </li>
+        <li class="Memory">
+          <div class="list-item-title">
+            <img src="assets/images/icon-memory.svg" alt="Memory">
+            Memory
+          </div>
+        </li>
+        <li class="Verbal">
+          <div class="list-item-title">
+            <img src="assets/images/icon-verbal.svg" alt="Verbal">
+            Verbal
+          </div>
+        </li>
+        <li class="Visual">
+          <div class="list-item-title">
+            <img src="assets/images/icon-visual.svg" alt="Visual">
+            Visual
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  
+</body>
+</html>
