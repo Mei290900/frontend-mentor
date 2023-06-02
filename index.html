@@ -49,6 +49,7 @@
       flex-direction: column;
       align-items: center;
       padding: 35px 47px 40px;
+      margin-right: 15px;
     }
     .container .left-side .result-title{
       color: hsl(241, 100%, 89%);
@@ -91,29 +92,52 @@
     .container .right-side h2{
       /* font-size: 10px; */
       padding-top: 25px;
-      padding-left: 20px; 
+      /* padding-left: 20px;  */
       text-align: left;
+      padding-bottom: 20px;
 
     }
 
-     .right-side ul li.reaction {      
+     .right-side ul li {      
       width: 250px;
       height: 40px;      
-      border-radius: 10px;
-      padding-left: 20px;
-      list-style: none;
-      /* justify-items: center; */
+      border-radius: 10px;      
+      list-style: none;  
+     margin: 15px;
+     /* text-align: left; */
+     justify-items: center;
+     /* display: flex; */   
+
     }
+
+   
+
     .reaction{
-      background-color: rgba(220, 24, 44,0.2);
-      padding-left: 30px;
-      /* text-align: left; */
-      /* justify-content: center; */
+      background-color: rgba(220, 24, 44,0.2);     
+   }
+   .Memory{
+      background-color: rgba(237, 226, 28, 0.453);
+     
     }
-    .right-side ul li .reaction u.list-item-title{
+    .Verbal{
+      background-color: rgba(28, 205, 96, 0.2);     
+   }
+   .Visual{
+      background-color: rgba(69, 29, 191, 0.2);     
+   }
+
+    .right-side ul li .reaction .list-item-title{
       display: flex;
-      padding-top: 20px;
+      padding-top: 20px;  
+      text-align: left;      
+      margin-left: 20px;
+     position: relative;
+
     }
+    span{
+      width: 50px;
+    }
+
 
     
   </style>
@@ -136,30 +160,32 @@
         <li class="reaction">
           <div class="list-item-title">
             <img src="assets/images/icon-reaction.svg" alt="reaction">
-            Reaction
+            Reaction <span><b>80</b> / 100</span>
           </div>
         </li>
         <li class="Memory">
           <div class="list-item-title">
             <img src="assets/images/icon-memory.svg" alt="Memory">
-            Memory
+            Memory <span><b>92</b> / 100</span>
           </div>
         </li>
         <li class="Verbal">
           <div class="list-item-title">
             <img src="assets/images/icon-verbal.svg" alt="Verbal">
-            Verbal
+            Verbal <span><b>61</b> / 100</span>
           </div>
         </li>
         <li class="Visual">
           <div class="list-item-title">
             <img src="assets/images/icon-visual.svg" alt="Visual">
-            Visual
+            Visual <span><b>72</b> / 100</span>
           </div>
         </li>
       </ul>
+      <button>Continue</button>
     </div>
   </div>
+  
 
   
 </body>
