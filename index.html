@@ -23,6 +23,12 @@
       box-sizing: border-box;
       font-family: "Hanken Grotesk";
       }
+      
+      @media (min-width: 576px) { 
+      *{
+        flex: 50%;
+      }
+     }
     body{
       display: flex;
       align-items: center;
@@ -113,30 +119,47 @@
    
 
     .reaction{
-      background-color: rgba(220, 24, 44,0.2);     
+      background-color: rgba(220, 24, 44,0.2);   
+      color:  rgb(220,24,44);
    }
    .Memory{
-      background-color: rgba(237, 226, 28, 0.453);
+      background-color: rgba(237, 226, 28, 0.2);
+      color: rgb(197, 189, 43);
      
     }
     .Verbal{
-      background-color: rgba(28, 205, 96, 0.2);     
+      background-color: rgba(28, 205, 96, 0.2);   
+      color: rgb(28, 205, 96);
    }
    .Visual{
-      background-color: rgba(69, 29, 191, 0.2);     
+      background-color: rgba(69, 29, 191, 0.2);    
+      color: rgb( 69, 29, 191 ) ;
    }
 
-    .right-side ul li .reaction .list-item-title{
-      display: flex;
-      padding-top: 20px;  
+     .list-item-title {
       text-align: left;      
-      margin-left: 20px;
-     position: relative;
-
+      margin-left: 10px;
+     /* position: relative; */
+     justify-items: center;
     }
+
     span{
       width: 50px;
+      margin-left: 100px;
+      color: #000;
     }
+    button{
+      width: 250px;
+      height: 50px;
+      border-radius: 50px;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      font-size: 15px;
+      margin-top: 20px;
+
+    }
+   
+
 
 
     
